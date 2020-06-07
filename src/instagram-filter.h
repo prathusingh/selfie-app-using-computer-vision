@@ -15,6 +15,8 @@ class InstagramFilter {
 
    public:
     InstagramFilter(std::string img_path);
+    void PencilSketch(Mat img);
+    void Cartoonify(Mat img);
 };
 }  // namespace instagramfilter
 

@@ -7,10 +7,14 @@ using namespace cv;
 
 namespace instagramfilter {
 InstagramFilter::InstagramFilter(std::string img_path) {
-    img = imread(img_path);
+    img = imread(img_path, 0);
     imshow("trump", img);
     waitKey(0);
 }
+
+void InstagramFilter::PencilSketch(Mat img) { Mat pencil_sketch_img; }
+
+void InstagramFilter::Cartoonify(Mat img) {}
 }  // namespace instagramfilter
 
 int main() {
